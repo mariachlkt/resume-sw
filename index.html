@@ -1,0 +1,117 @@
+---
+---
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"> 
+    <meta name="description" content="The CV of {{ site.data.det.name }}">
+    <meta name="viewport" content="width=device-width">
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>    
+<body>
+    <div class="wrapper">
+      <div class="intro">
+        <div class="profile-info">
+          <div class="bio">
+            <h1 class="name">{{ site.data.det.name }}</h1>
+            <p class="profession">{{ site.data.det.profession }}</p>
+          </div>
+        </div>           
+          <div class="intro-section contact">
+            <h3 class="title">Contact</h3>
+            <div class="info-section">  
+              <ul>  
+                <p>{{ site.data.det.location }}</p>
+                <p>
+                  <a href = "mailto:{{ site.data.det.email }}"></a>
+                </p>
+                <p>
+                  <a target="_blank" rel="author" href={{ site.data.det.gurl }}></a>
+                </p>
+                <p>{{ site.data.det.github }}</p>
+              </ul>  
+            </div>
+          
+          <div class="intro-section languages">
+            <h3 class="title">Languages</h3>
+            <div class="info-section">
+              <ul> 
+                <p>{{ site.data.det.languages[0] }}</p>
+                <p>{{ site.data.det.languages[1] }}</p>
+              </ul>
+            </div>   
+          </div>
+          </div>
+      </div>        
+      <div class="detail">
+        <div class="detail-section edu">
+          <div class="detail-title">
+            <div class="title-icon"></div>
+            <h2 class= title>Education</h2>
+          </div>
+          <div class="detail-content">
+            <div class="timeline-block">
+              <h1>{{ site.data.det.education[0].dept }}</h1>
+              <p>{{ site.data.det.education[0].university }}</p>
+              <time>{{ site.data.det.education[0].time }}</time>
+            </div>
+            <div class="timeline-block">
+              <h1>{{ site.data.det.education[1].dept }}</h1>
+              <p>{{ site.data.det.education[1].university }}</p>
+              <time>{{ site.data.det.education[1].time }}</time>
+            </div>
+          </div>      
+        </div>
+        <div class="detail-section pg-skill">
+          <div class="detail-title">
+            <div class="title-icon"></div>
+            <h2 class= title>Programming Skills</h2>
+          </div> 
+          <div class="detail-content">
+            <ul class="pg-list">
+              <li>{{ site.data.det.skills[0] }}</li>
+              </br>
+              <li>{{ site.data.det.skills[1] }}</li>
+              </br>
+              <li>{{ site.data.det.skills[2] }}</li>
+              </br>
+              <li>{{ site.data.det.skills[3] }}</li>
+              </br>
+              <li>{{ site.data.det.skills[4] }}</li>
+            </ul>
+        
+          </div>
+        </div>
+        <div class="detail-section tool-skill">
+          <div class="detail-title">
+            <div class="title-icon"></div>
+              <h2 class= title>Developement Tools</h2>
+          </div>
+          <div class="detail-content">
+            <ul class="tool-list">
+              <p class=rounded>{{ site.data.det.tools[0] }}</p>
+              <p class=rounded1>{{ site.data.det.tools[1] }}</p>
+              <p class=rounded2>{{ site.data.det.tools[2] }}</p>
+              <p class=rounded3>{{ site.data.det.tools[3] }}</p>
+            </ul>
+          </div>
+        </div>     
+        
+        <div class="detail-section projects">
+          <div class="detail-title">
+          <div class="title-icon">&nbsp;</div>
+          <h2 class= title>Projects</h2>
+          </div>
+          <div class="detail-content">
+          <ul>  
+            <li><h3>{{ site.data.det.projects[0].title }}</h3></li>
+            <p>{{ site.data.det.projects[0].subj }}</p>
+          </ul>
+        </div>
+      </div>
+    </div>   
+     
+      
+</body>
+</html>

@@ -1,0 +1,37 @@
+title: CV-Maria Chalkioti
+name: Maria Chalkioti
+profession: IT Student
+location: 'Athens, Greece'
+email: p18chal@ionio.gr
+gurl: 'https://github.com/mariachlkt'
+github: mariachlkt
+languages:
+  - Michigan Certificate of Proficiency in English-C2
+  - Greek -Native
+education:
+  - first: null
+    dept: Department of Computer Science
+    university: 'Ionian University, CFU'
+    time: 2018- present
+  - second: null
+    dept: High School Diploma
+    university: '4th High Scool, ATH'
+    time: 2015-2018
+skills:
+  - C
+  - HTML5
+  - CSS3
+  - Python
+  - MySQL
+sklperc: [60, 75, 70, 50, 85]
+tools:
+  - SPSS
+  - Wordpress
+  - Github
+  - PyQt5
+projects:
+  - first: null
+    title: Database for Airline Reservation System
+    subj: >-
+      Develop a relational database for airline reservation system and create a
+      front-end application that controls it
